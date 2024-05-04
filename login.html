@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        main {
+            padding: 20px;
+            background-color: #000000;
+            height: 95vh;
+
+        }
+
+        #signupContainer {
+            height: 100%;
+            background-color: #5BBCFF;
+            display: flex;
+            border-radius: 20px;
+
+        }
+
+        .left-container {
+            position: relative;
+            flex: 1;
+        }
+
+        .left-container img {
+            padding: 20px;
+            position: absolute;
+            display: block;
+            object-fit: contain;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            padding: 0em 2em;
+            margin-top: 50px;
+            margin-left: 20px;
+            text-align: center;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+        }
+
+        .right-container {
+            flex: 1;
+        }
+
+        .right-container {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 80px;
+            border-radius: 40px 0px 0px 40px;
+            justify-content: space-around;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group input {
+            font-size: 1.1rem;
+            padding: 0.7em 0.4em;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        .form-group label {
+            padding: 0px 7px;
+            background-color: white;
+            font-size: 0.9rem;
+            left: 10px;
+            top: -8px;
+            z-index: 1;
+            position: absolute;
+            color: rgb(99, 99, 99);
+        }
+
+        #emailInput {
+            position: relative;
+        }
+
+        input[type=submit] {
+            font-size: 1.1rem;
+            padding: 0.5em 0.7em;
+            color: white;
+            border: none;
+            background-color: #03AED2;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        input[type=submit]:hover {
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.5em 0.7em;
+            color: white;
+            border: none;
+            background-color: #019cbb;
+            border-radius: 8px;
+        }
+
+        p {
+            text-align: right;
+        }
+
+        p a {
+            text-decoration: none;
+            color: blue;
+        }
+
+
+        .orHr {
+            display: flex;
+            align-items: center;
+        }
+
+        .orHr hr {
+            width: 100%;
+        }
+
+        .orHr span {
+            padding: 10px 15px;
+        }
+
+        .continue-container p {
+            font-size: large;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            padding: 0.7em 0.8em;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        p img {
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="signupContainer">
+            <section class="left-container">
+                <h2>All your tutors and students in one place</h2>
+                <img src="./5484597.png" alt="">
+
+            </section>
+            <section class="right-container">
+                <h1>Welcome Back,</h1>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Enter your email</label>
+                        <input type="text" class="" id="emailInput">
+                    </div class="form-group">
+                    <div class="form-group">
+                        <label for="">Enter your password</label>
+                        <input type="text" id="passwordInput">
+                    </div>
+                    <input type="submit" value="Signup">
+                </form>
+                <p>Don't have an account yet? <a href="">Sign up</a></p>
+                <div class="orHr">
+                    <hr>
+                    <span>or</span>
+                    <hr>
+                </div>
+                <div class="continue-container">
+                    <p class="google-continue"><img src="./google.png" alt="">Continue with Google</p>
+                    <p class="facebook-continue"><img src="./facebook.png" alt="">Continue with Facebook</p>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
